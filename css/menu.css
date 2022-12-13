@@ -249,10 +249,50 @@ div h1 {
     width: 100%;
     height: auto;
     background-image: url('../img/staff-bartender.jpg');
-    background-color: rgb(0, 4, 17);
+    background-color: rgb(0, 4, 17, .8);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.menu-background {
+    padding: 5em;
+    background-color: rgb(0, 4, 17, .8);
+}
+
+.menu h2 {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.menu-container {
+    padding: 5em 10em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10em 40em;
+}
+
+.menu-section {
+    flex-basis: 35%;
+}
+
+.menu-item {
+    padding: 2em 0;
+}
+
+.menu-group {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menu-group h4 {
+    flex: 1 1 fit-content;
+}
+
+.menu-last-h4 {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* footer section */
