@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sprint Challenge - Home</title>
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto|Rubik"
       rel="stylesheet"
@@ -20,43 +20,97 @@
     <div>
       <!-- header -->
       <header>
-        <nav>
-          <h1>BLOOMTECH BAR AND GRILL</h1>
-          <!-- nav -->
-          <div class="nav-buttons">
-            <a href="#home">Menu</a>
-            <a href="#about">Reservations</a>
-            <a href="#projects">Special Offers</a>
-            <a href="#contact">Contact</a>
-          </div>
-		  <div class="social">
-		  	<a href="https://twitter.com/RupeKaleb" target="_blank" rel="noreferrer" rel="noopener">
-				<img class="social-icons" src="/Social-Icons/Twitter-48px.png"></img>
-			</a>
-		  	<a href="https://github.com/Kaleb-Rupe" target="_blank" rel="noreferrer" rel="noopener">
-				<img class="social-icons" src="/Social-Icons/GitHub-48px.png"></img>
-			</a>
-		  	<a href="https://youtube.com" target="_blank" rel="noreferrer" rel="noopener">
-				<img class="social-icons" src="/Social-Icons/YouTube-48px.png"></img>
-			</a>
-		  </div>
-        </nav>
+        <div class="mainNav">
+          <a href="index.html">
+            <h1>BLOOMTECH BAR AND GRILL</h1>
+          </a>
+          <nav>
+            <div class="nav-buttons">
+              <a href="menu.html">Menu</a>
+              <a href="#about">Reservations</a>
+              <a href="#projects">Special Offers</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <div class="social">
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                class="social-icons"
+              >
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a
+                href="https://twitter.com/RupeKaleb"
+                target="_blank"
+                class="social-icons"
+              >
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social-icons"
+              >
+                <i
+                  class="fab fa-instagram-square"
+                  src="/Social-Icons/YouTube-48px.png"
+                ></i>
+              </a>
+            </div>
+          </nav>
+        </div>
       </header>
 
       <!-- gallery section -->
       <section class="gallery">
-          <h2>OUR FOOD</h2>
-		  <div class="img-galley">
-			<img class="img" src="img/food-avocadotoast.jpg" alt="Avocado Toast with a poached egg, sundried tomatos, and onions.">
-			<img class="img" src="img/food-burger.jpg" alt="Person hold a alcholic beverage with a burger in the top of the photo and a seafood dish in the bottom right.">
-			<img class="img" src="img/food-poutine.jpg" alt="Poutine dish in a cast iron square pan.">
-			<img class="img" src="img/food-ribs.jpg" alt="Gourmet short ribs in a fancy dish.">
-			<img class="img" src="img/food-sandwich.jpg" alt="Double stacked sandwich with chicken and veggies.">
-			<img class="img" src="img/food-sausage.jpg" alt="Sausage with a gourmet bum and onions on top.">
-			<img class="img" src="img/food-steak.jpg" alt="Steak on a white dish with gravy all around and a broccolini laid half on the steak.">
-			<img class="img" src="img/food-tacos.jpg" alt="Taco at a bar with beer sitting in the background.">
-			<img class="img" src="img/food-wings.jpg" alt="Hot wings on a white plate with cucumber slices and a orange soda.">
-		  </div>
+        <h2>OUR FOOD</h2>
+        <div class="img-gallery">
+          <img
+            class="img"
+            src="img/food-avocadotoast.jpg"
+            alt="Avocado Toast with a poached egg, sundried tomatos, and onions."
+          />
+          <img
+            class="img"
+            src="img/food-burger.jpg"
+            alt="Person hold a alcholic beverage with a burger in the top of the photo and a seafood dish in the bottom right."
+          />
+          <img
+            class="img"
+            src="img/food-poutine.jpg"
+            alt="Poutine dish in a cast iron square pan."
+          />
+          <img
+            class="img"
+            src="img/food-ribs.jpg"
+            alt="Gourmet short ribs in a fancy dish."
+          />
+          <img
+            class="img"
+            src="img/food-sandwich.jpg"
+            alt="Double stacked sandwich with chicken and veggies."
+          />
+          <img
+            class="img"
+            src="img/food-sausage.jpg"
+            alt="Sausage with a gourmet bum and onions on top."
+          />
+          <img
+            class="img"
+            src="img/food-steak.jpg"
+            alt="Steak on a white dish with gravy all around and a broccolini laid half on the steak."
+          />
+          <img
+            class="img"
+            src="img/food-tacos.jpg"
+            alt="Taco at a bar with beer sitting in the background."
+          />
+          <img
+            class="img"
+            src="img/food-wings.jpg"
+            alt="Hot wings on a white plate with cucumber slices and a orange soda."
+          />
+        </div>
       </section>
 
       <!-- spacer -->
@@ -122,7 +176,9 @@
 
               <div>
                 <a id="phone" href="tel:999-999-9999">999-999-9999</a>
-				<a id="email" href="mailto:restaurant@bloomtech.com">restaurant@bloomtech.com</a>
+                <a id="email" href="mailto:restaurant@bloomtech.com"
+                  >restaurant@bloomtech.com</a
+                >
               </div>
             </div>
           </div>
@@ -134,16 +190,35 @@
 
       <!-- footer -->
       <footer>
-        <!-- email signup -->
-			Join our mailing list!
-			Sign Up
-        <!-- nav -->
-			Menu
-			Reservations
-			Special Offers
-			Contact
-        <!-- copyright -->
-        ©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.
+        <div class="emailForm">
+          <form action="#">
+            <div>
+              <label for="cta">Join our mailing list!</label>
+            </div>
+            <div class="form-group">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                size="30"
+                placeholder="Email Address"
+                aria-label="email address"
+                pattern=".+@globex\.com"
+                required
+              />
+              <button class="button" type="submit">Sign Up</button>
+            </div>
+          </form>
+          <nav class="footerNav">
+            <a href="menu.html">Menu</a>
+            <a href="#about">Reservations</a>
+            <a href="#projects">Special Offers</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div class="copyright">
+          <p>©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.</p>
+        </div>
       </footer>
     </div>
   </body>

@@ -1,3 +1,4 @@
+/*CSS Reset*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -141,14 +142,16 @@ table {
     max-width: 100%;
 }
 
+/* General Style */
+
 html {
     font-size: 62.5%;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: rgb(225, 239, 230);
     line-height: 1.5;
-    color: whitesmoke;
     background-color: rgb(0, 4, 17);
 }
 
@@ -156,12 +159,11 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 p,
 a,
 i {
     text-decoration: none;
+    color: rgb(225, 239, 230);
 }
 
 h1 {
@@ -181,7 +183,7 @@ a {
     font-size: 3rem;
 }
 
-/* header section */
+/* Header Section Style */
 header {
     width: 100%;
     height: 110vh;
@@ -191,20 +193,22 @@ header {
     background-repeat: no-repeat;
 }
 
-nav {
-    background-color: rgba(0, 0, 0, 0.813);
+.mainNav {
+    background-color: rgb(0, 4, 17, .8);
 }
 
-nav h1 {
+div h1 {
+    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     padding: 0.4em;
 }
 
 .nav-buttons {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-buttons a {
@@ -225,6 +229,25 @@ nav h1 {
     margin: 0.5em 1.5em;
 }
 
+/* Gallery Section */
+.gallery {
+    margin: 5em;
+    text-align: center;
+    background-color: rgb(0, 4, 17);
+}
+
+.img-gallery {
+    margin: 1em;
+    width: 80%;
+    display: inline-flex;
+    gap: 6em;
+    flex-wrap: wrap;
+}
+
+.img {
+    flex: 1 1 10em;
+}
+
 /* spacers */
 .spacer {
     width: 100%;
@@ -238,25 +261,10 @@ nav h1 {
     background-color: rgb(0, 4, 17);
 }
 
-/* gallery section */
-.gallery {
-    width: 100%;
-    text-align: center;
-    background-color: rgb(0, 4, 17);
-}
-
-.img-gallery {
-    margin: 0 10em;
-}
-
-.img {
-    margin: 2.5em;
-}
-
 /* about us section */
 .about {
     width: 100%;
-    height: 75vh;
+    min-height: 82vh;
     text-align: center;
     background-image: url("../img/staff-cooks.jpg");
     background-size: cover;
@@ -265,7 +273,7 @@ nav h1 {
 }
 
 .about-container {
-    height: 100%;
+    min-height: 82vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -278,7 +286,7 @@ nav h1 {
 }
 
 .about-container .text {
-    width: 50%;
+    width: 55%;
 }
 
 /* contact us section */
@@ -338,12 +346,59 @@ nav h1 {
     color: white;
 }
 
-/* footer section */
+/* Footer Section Style */
 footer {
-    width: 100%;
-    height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+}
+
+.emailForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    margin-left: 1em;
+    text-align: center;
+}
+
+label {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.form-group {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group>* {
+    font-size: 2.8rem;
+    padding: 0.2em 0;
+}
+
+button.button {
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+.footerNav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 65%;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0.25em 5em;
+}
+
+.copyright>* {
+    font-size: 1.8rem;
 }
 
 /* mobile media query */
